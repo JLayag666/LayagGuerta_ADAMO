@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2"/>
+
+
+
+        <EditText
+            android:id="@+id/Editemail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="Password" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:text="Forgot password?" />
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Don't have an account yet?"/>
+
+        <Button
+            android:id="@+id/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup" />
+
+        <Button
+            android:id="@+id/fblogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with Facebook" />
+    </LinearLayout>
+</RelativeLayout>
